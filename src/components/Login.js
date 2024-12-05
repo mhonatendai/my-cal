@@ -12,25 +12,27 @@ function Login() {
                         <div className="card">
                             <div className="card-body">
                                 <form id="registrationForm" action="">
-                                    <div className="form-group">
+                                    <div className="form-group" style={{padding: '10px'}}>
                                         <input type="email"
                                                className="form-control"
                                                id="email"
                                                placeholder="Email or Username" required/>
                                     </div>
-                                    <div className="form-group">
+                                    <div className="form-group" style={{padding: '10px'}}>
                                         <input type="password"
                                                className="form-control"
                                                id="password"
                                                placeholder="Password"
                                                required/>
                                     </div>
-                                    <button className="btn btn-danger">
-                                        Login
-                                    </button>
+                                    <div className="form-group" style={{display: 'flex', justifyContent:'center', alignItems:'center', padding: '10px'}}>
+                                        <button className="btn btn-primary">
+                                            Login
+                                        </button>
+                                    </div>
                                 </form>
                                 <p className="mt-3">
-                                    Not registered?
+                                Not registered?
                                     <a href="#">Create an account</a>
                                 </p>
                             </div>
