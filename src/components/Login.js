@@ -26,15 +26,15 @@ function Login() {
                                                required/>
                                     </div>
                                     <div className="form-group" style={{display: 'flex', justifyContent:'center', alignItems:'center', padding: '10px'}}>
-                                        <button className="btn btn-primary">
+                                        <button className="btn btn-primary" style={{ width: '50%', maxWidth: '200px', margin: 'auto' }}>
                                             Login
                                         </button>
                                     </div>
                                 </form>
-                                <p className="mt-3">
-                                Not registered?
-                                    <a href="#">Create an account</a>
-                                </p>
+                                <div className="form-group" style={{display: 'flex', justifyContent:'space-between', alignItems:'center', padding: '10px'}}>
+                                    <p>Not registered?</p>
+                                    <p><a href="https://www.google.com">Create an account</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
