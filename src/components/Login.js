@@ -1,6 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 function Login() {
+
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate('/home');
+    };
 
     return (
 
@@ -26,7 +36,7 @@ function Login() {
                                                required/>
                                     </div>
                                     <div className="form-group" style={{display: 'flex', justifyContent:'center', alignItems:'center', padding: '10px'}}>
-                                        <button className="btn btn-primary" style={{ width: '50%', maxWidth: '200px', margin: 'auto' }}>
+                                        <button onClick={navigateToHome} className="btn btn-primary" style={{ width: '50%', maxWidth: '200px', margin: 'auto' }}>
                                             Login
                                         </button>
                                     </div>
